@@ -1,0 +1,62 @@
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,250,1) 100%);
+    background: url("https://images.unsplash.com/photo-1533251107558-25299f5a3893?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.container{
+    left: 50%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+    font-size: 28px;
+}
+input{
+    width: 95%;
+    line-height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+.card {
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     border-radius: 0;
+     align-items: center;
+     justify-content: center;
+    padding: 40px 0
+   }
+
+   .cal-item{
+    transform: rotate(3deg);
+    animation: moveUpDown 3s ease-in-out infinite;
+    margin: 50% auto;
+    max-width: 465px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background-color: #ffffff15;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+  }
+  /* Keyframes for smooth up and down movement */
+  @keyframes moveUpDown {
+    0%,
+    100% {
+      transform: translateY(0) rotate(3deg);
+    }
+    50% {
+      transform: translateY(-5px) rotate(3deg);
+    }
+   }
